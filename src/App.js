@@ -1,36 +1,15 @@
-import Sub from "./components/Sub.js";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header.js";
+// import Home from "./components/Home.js";
+// import About from "./components/About.js";
+// import Contact from "./components/Contact.js";
 function App(){
-    //let user = "I am Working With Props";
-    let users = [
-      {
-        fname:'Asad',
-        em:'info@codewithasad.com',
-        phone:'1564654'
-      },
-      {
-        fname:'Khizar Khan',
-        em:'info@codewithkhizar.com',
-        phone:'1564655544'
-      },
-      {
-        fname:'Sufyan Shahid',
-        em:'info@codewithkhizar.com',
-        phone:'1564655544'
-      },
-      {
-        fname:'Waqas',
-        em:'info@codewithkhizar.com',
-        phone:'1564655544'
-      },
-      {
-        fname:'Zeeshan',
-        em:'info@codewithkhizar.com',
-        phone:'1564655544'
-      },
-    ];
     return (
        <div>
-          <Sub Users={users}></Sub>
+          <Header></Header>
+         <div className="mt-4">
+            <h1>Here Is</h1>
+         </div>
        </div> 
     );
 }
